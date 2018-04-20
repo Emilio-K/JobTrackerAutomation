@@ -19,14 +19,14 @@ col_contacted=2
 col_jobposting=3
 
 def writeEntry(added):
-		row_index = START_ROW;
+		row_index = START_ROW
 		w_sheet.write(row_index, col_date,today)
 		w_sheet.write(row_index, col_company, str(added))
 		w_sheet.write(row_index,col_contacted, 'No')
 		curr_job_posting = "file:\\\\" + cwd + "\Job Applications\\2018\\" + added + "\\jobposting.docx"
 		w_sheet.write(row_index, col_jobposting, curr_job_posting)
 		wb.save('jobs.xls')
-		++START_ROW;
+		START_ROW += 1
 
 #create initial list of directories in the path.
 before = dict([(f,None) for f in os.listdir (path_to_watch)])
