@@ -1,0 +1,1 @@
+This is just a simple program to help with my job search. I have an excel spreadsheet that I use to keep track of places I have applied to, and other information. This little program will just watch a certain directory and if a folder was added, it will create a new entry in my spreadsheet.
